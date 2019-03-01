@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0427B0CC22278983007C2A76 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427B0CB22278983007C2A76 /* Music.swift */; };
 		04A1C54F21F063E3001F4B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C54E21F063E3001F4B5C /* AppDelegate.swift */; };
 		04A1C55121F063E3001F4B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C55021F063E3001F4B5C /* ViewController.swift */; };
 		04A1C55421F063E3001F4B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1C55221F063E3001F4B5C /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		04A1C55921F063E4001F4B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1C55721F063E4001F4B5C /* LaunchScreen.storyboard */; };
 		04A1C56421F063E5001F4B5C /* RxSwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C56321F063E5001F4B5C /* RxSwiftLearnTests.swift */; };
 		04A1C56F21F063E5001F4B5C /* RxSwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C56E21F063E5001F4B5C /* RxSwiftLearnUITests.swift */; };
+		04A1C59921F066FC001F4B5C /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1C59121F066E8001F4B5C /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04A1C59B21F066FC001F4B5C /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1C59021F066E8001F4B5C /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04A1C59D21F066FC001F4B5C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1C59221F066E8001F4B5C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04A1C59F21F066FC001F4B5C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1C58F21F066E8001F4B5C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04A1C5A121F066FC001F4B5C /* RxTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1C58E21F066E8001F4B5C /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04A1C5A321F06799001F4B5C /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C5A221F06799001F4B5C /* MusicListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		04A1C58B21F06616001F4B5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04A1C59F21F066FC001F4B5C /* RxSwift.framework in Embed Frameworks */,
+				04A1C59D21F066FC001F4B5C /* RxCocoa.framework in Embed Frameworks */,
+				04A1C59921F066FC001F4B5C /* RxAtomic.framework in Embed Frameworks */,
+				04A1C5A121F066FC001F4B5C /* RxTest.framework in Embed Frameworks */,
+				04A1C59B21F066FC001F4B5C /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0427B0CB22278983007C2A76 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		04A1C54B21F063E3001F4B5C /* RxSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A1C54E21F063E3001F4B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A1C55021F063E3001F4B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +73,12 @@
 		04A1C56A21F063E5001F4B5C /* RxSwiftLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A1C56E21F063E5001F4B5C /* RxSwiftLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftLearnUITests.swift; sourceTree = "<group>"; };
 		04A1C57021F063E5001F4B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A1C58E21F066E8001F4B5C /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		04A1C58F21F066E8001F4B5C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		04A1C59021F066E8001F4B5C /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		04A1C59121F066E8001F4B5C /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		04A1C59221F066E8001F4B5C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		04A1C5A221F06799001F4B5C /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +113,7 @@
 				04A1C56221F063E5001F4B5C /* RxSwiftLearnTests */,
 				04A1C56D21F063E5001F4B5C /* RxSwiftLearnUITests */,
 				04A1C54C21F063E3001F4B5C /* Products */,
+				04A1C58D21F066E8001F4B5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +136,8 @@
 				04A1C55521F063E4001F4B5C /* Assets.xcassets */,
 				04A1C55721F063E4001F4B5C /* LaunchScreen.storyboard */,
 				04A1C55A21F063E4001F4B5C /* Info.plist */,
+				04A1C5A221F06799001F4B5C /* MusicListViewModel.swift */,
+				0427B0CB22278983007C2A76 /* Music.swift */,
 			);
 			path = RxSwiftLearn;
 			sourceTree = "<group>";
@@ -125,6 +160,18 @@
 			path = RxSwiftLearnUITests;
 			sourceTree = "<group>";
 		};
+		04A1C58D21F066E8001F4B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04A1C59121F066E8001F4B5C /* RxAtomic.framework */,
+				04A1C59021F066E8001F4B5C /* RxBlocking.framework */,
+				04A1C59221F066E8001F4B5C /* RxCocoa.framework */,
+				04A1C58F21F066E8001F4B5C /* RxSwift.framework */,
+				04A1C58E21F066E8001F4B5C /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +182,7 @@
 				04A1C54721F063E3001F4B5C /* Sources */,
 				04A1C54821F063E3001F4B5C /* Frameworks */,
 				04A1C54921F063E3001F4B5C /* Resources */,
+				04A1C58B21F06616001F4B5C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +306,8 @@
 			files = (
 				04A1C55121F063E3001F4B5C /* ViewController.swift in Sources */,
 				04A1C54F21F063E3001F4B5C /* AppDelegate.swift in Sources */,
+				04A1C5A321F06799001F4B5C /* MusicListViewModel.swift in Sources */,
+				0427B0CC22278983007C2A76 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +483,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RAQYULZ5E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxSwiftLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +506,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RAQYULZ5E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxSwiftLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
